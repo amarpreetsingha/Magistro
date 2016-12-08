@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:weightSum="5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_weight="0.1">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Name"
+            android:ems="10"
+            android:layout_weight="0.2"
+            android:id="@+id/editText" />
+
+        <ImageButton
+            android:layout_weight="0.8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu_manage"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/studentpay"
+        android:layout_weight="0.7"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp">
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:layout_weight="0.1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="PAYMENT INFO"
+        android:textColor="@color/colorAccent"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_weight="4"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FEES"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_gravity="bottom"
+                android:layout_weight="0.1"
+                />
+            <LinearLayout
+                android:layout_weight="0.3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:textSize="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Paid"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.25"/>
+                <TextView
+                    android:textSize="18dp"
+                    android:layout_weight="0.25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:layout_gravity="center" />
+                <TextView
+                    android:textSize="18dp"
+                    android:layout_weight="0.25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Remain"
+                    android:layout_gravity="center" />
+                <TextView
+                    android:textSize="18dp"
+                    android:layout_weight="0.25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_gravity="bottom"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INSTALLMENT"
+                android:layout_weight="0.1"
+          />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="0.3"
+                android:weightSum="1">
+
+                <TextView
+                    android:textSize="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Choosen"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.25"/>
+                <TextView
+                    android:textSize="18dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-"/>
+                <TextView
+                    android:textSize="18dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Remain"/>
+                <TextView
+                    android:textSize="18dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-"/>
+            </LinearLayout>
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Enter Amount"
+               android:layout_weight="0.2"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"/>
+
+</LinearLayout>
